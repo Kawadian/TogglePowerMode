@@ -1,4 +1,6 @@
 read -s -p "パスワードを入力" password
+#毎度打つのが面倒な場合は↑をコメントアウトor削除して↓のコメントアウトを消す
+#password="パスワードをここに置き換える"
 status="`pmset -g |grep lowpowermode`"
 status="`echo $status | tr -d ' '`"
 LowPower="lowpowermode1"
